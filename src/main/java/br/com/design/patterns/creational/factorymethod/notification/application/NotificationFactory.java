@@ -1,9 +1,10 @@
-package br.com.design.patterns.creational.factorymethod.notification.orchestrator;
+package br.com.design.patterns.creational.factorymethod.notification.application;
 
-import br.com.design.patterns.creational.factorymethod.notification.core.NotificationSender;
+import br.com.design.patterns.creational.factorymethod.notification.core.factory.NotificationSender;
 import br.com.design.patterns.creational.factorymethod.notification.infrastructure.processor.EmailSender;
 import br.com.design.patterns.creational.factorymethod.notification.infrastructure.processor.SMSSender;
 
+//Structured using DDD-style with core and infrastructure modules
 public class NotificationFactory {
     private static NotificationSender notificationSender;
     private static void initialize() {

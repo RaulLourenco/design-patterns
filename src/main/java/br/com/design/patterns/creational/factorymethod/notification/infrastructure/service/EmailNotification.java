@@ -1,6 +1,6 @@
-package br.com.design.patterns.creational.factorymethod.notification.infrastructure;
+package br.com.design.patterns.creational.factorymethod.notification.infrastructure.service;
 
-import br.com.design.patterns.creational.factorymethod.notification.core.Notification;
+import br.com.design.patterns.creational.factorymethod.notification.core.service.Notification;
 
 public class EmailNotification implements Notification {
     @Override
