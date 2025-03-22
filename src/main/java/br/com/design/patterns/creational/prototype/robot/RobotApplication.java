@@ -46,11 +46,11 @@ abstract class Robot {
 
     public Robot(Robot source) {
         // Since 'id' and 'model' are immutable (String), a shallow-copy strategy works fine.
-        // Primitive fields also works with shallow-copy.
+        // Primitive fields also work with a shallow-copy strategy.
         this.id = source.id;
         this.model = source.model;
-        // Create a new list and copy each component (Deep Copy). If 'source.components' is passed to 'this.components' directly,
-        // it will be only referenced, because 'components' is a List (a mutable object).
+        // Create a new list and copy each component (deep copy). If 'source.components' were passed directly to 'this.components',
+        // only the reference would be copied, since 'components' is a List (a mutable object).
         this.components = new ArrayList<>(source.components);
     }
 
