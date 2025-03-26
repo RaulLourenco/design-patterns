@@ -1,0 +1,8 @@
+#IDE folder
+.idea
+
+#.iml files
+*.iml
+
+#compiled files
+out
