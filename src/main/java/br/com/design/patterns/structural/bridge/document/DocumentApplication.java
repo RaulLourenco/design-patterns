@@ -7,7 +7,7 @@ public class DocumentApplication {
         Renderer htmlRenderer = new HtmlRenderer();
         Document report = new ReportDocument(htmlRenderer, "Quartely Financials");
         report.render();
-        
+
         // Create an invoice rendered in PDF.
         Renderer pdfRenderer = new PdfRenderer();
         Document invoice = new InvoiceDocument(pdfRenderer, "Invoice #12345");
